@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="javalib">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../My-CS61B-HW/library-sp18/javalib" />
+      <root url="jar://$PROJECT_DIR$/../../../java/Jar/junit-4.13.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../My-CS61B-HW/library-sp18/javalib" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../My-CS61B-HW/library-sp18/javalib" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../My-CS61B-HW/library-sp18/javalib" recursive="false" type="SOURCES" />
+  </library>
+</component>
