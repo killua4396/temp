@@ -1,7 +1,7 @@
 package Correct_Project1a_todo_1b.test;
 import Correct_Project1a_todo_1b.*;
 import org.junit.Assert;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 public class TestPalindrome {
     // You must use this palindrome, and not instantiate
