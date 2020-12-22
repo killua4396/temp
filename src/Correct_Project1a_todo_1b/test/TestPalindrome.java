@@ -9,6 +9,7 @@ public class TestPalindrome {
     static Palindrome palindrome = new Palindrome();
 
     @Test
+    //测试字符串转化成字符链表
     public void testWordToDeque() {
         Deque d = palindrome.wordToDeque("persiflage");
         String actual = "";

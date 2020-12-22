@@ -13,6 +13,9 @@ public class Palindrome {
         return result;
     }
     public boolean isPalindrome(String word){
+        if(word.length()==0||word.length()==1){
+            return true;
+        }
         Deque<Character> words = wordToDeque(word);
         char[] temp1 = new char[words.size()];
         char[] temp2 = new char[words.size()];
@@ -26,4 +29,25 @@ public class Palindrome {
         }
         return Arrays.equals(temp1,temp2);
     }
+    public boolean isPalindrome(String word , CharacterComparator cc){
+        cc = new OffByOne();
+        Deque<Character> words = wordToDeque(word);
+        for(int i=0;i<words.size()/2;i++){
+            if (!cc.equalChars(words.get(i),words.get(words.size()-1-i))){
+                return false;
+            }
+        }
+        return true;
+    }
+    public boolean isPalindrome(String word,CharacterComparator cc , int n){
+        cc = new OffByN(n);
+        Deque<Character> words = wordToDeque(word);
+        for(int i=0;i<words.size()/2;i++){
+            if (!cc.equalChars(words.get(i),words.get(words.size()-1-i))){
+                return false;
+            }
+        }
+        return true;
+    }
+
 }
